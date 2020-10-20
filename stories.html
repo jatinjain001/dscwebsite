@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" href="favicon.png">
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <link rel="manifest" href="/manifest.json">
+    <title>
+        Stories|DSC RJIT
+    </title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+        async />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" async />
+    <link rel="stylesheet" href="assets/css/material-kit.css?v=2.0.2" async>
+    <!-- Documentation extras -->
+    <link href="assets/assets-custom/demo.css" rel="stylesheet" async />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"
+        async>
+    <link href="assets/assets-custom/css/footer.css" rel="stylesheet" async />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css" async>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Open+Sans" rel="stylesheet" async>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" async>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+
+
+        #top-button {
+            font-size: 20px;
+            transition: 0.3s ease;
+        }
+
+        .tab {
+            margin-left: 40px;
+        }
+
+        /*
+        .grid-item { width: 25%; }
+        .grid-item--width2 { width: 50%; }*/
+
+        .img-fluid {
+            border-radius: 5px 5px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #12172b;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container1 {
+            margin: 10px 10px;
+            color: gray;
+        }
+
+        .heading {
+            font-size: 45px;
+            font-style: bold;
+            color: orange;
+        }
+
+        .heading span {
+            font-size: 25px;
+            font-style: italic;
+            color: orange;
+
+        }
+
+        .profiles {
+            display: inline-block;
+            justify-content: space-around;
+            margin: 20px 80px;
+        }
+
+
+        .profile {
+            flex-basis: 260px;
+
+        }
+
+        .user-name {
+            margin-top: 07px;
+            font-size: 22px;
+            color: blue;
+        }
+
+
+        .profile .profile-img {
+            height: 150px;
+            width: 150px;
+            border-radius: 60%;
+            cursor: pointer;
+            border-color: black;
+            border-style: inset;
+            margin: auto;
+
+        }
+
+
+
+        .social a {
+            margin: 05px;
+            color: gray;
+            display: inline-block;
+        }
+
+
+        @media only screen and (max-width: 1150px) {
+            .profiles {
+                flex-direction: column;
+            }
+
+            .profile {
+                display: inline-block;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile p {
+                text-align: center;
+                margin: 20px 60px 80px 60px;
+                font-size: 20px;
+            }
+
+
+            @media only screen and (max-width: 900px) {
+                .heading {
+                    font-size: 40px;
+                    color: orange;
+                    text-align: center;
+                }
+
+                .heading span {
+                    font-size: 15px;
+                }
+
+                .profiles {
+                    margin: 20px 0px;
+                }
+
+                .profile p {
+                    margin: 20px 10px 80px 10px;
+                }
+            }
+        }
+    </style>
+
+
+    <!-- iframe removal -->
+
+</head>
+
+<body class="landing-page" name="top" id="top">
+    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg " color-on-scroll="100"
+        id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="/">
+                    <span id="gdg-logo">
+                        <img src="assets/img/logos/dsc_header.png" style="max-height: 110%;" />
+                </a>
+                <button style="color:rgb(120,120,120)" class="navbar-toggler" type="button" data-toggle="collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown nav-item">
+                        <a href="#" data-page="index" class="nav-link">
+                            <span><b>Home</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./events.html" data-page="events" class="nav-link">
+                            <span><b id="header_text">Events</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./resources.html" data-page="resources" class="nav-link">
+                            <span><b id="header_text">Resources</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./solution.html" data-page="projects" class="nav-link">
+                            <span style="color: red;"><u><b id="header_text">Solution Challenge</b></u></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./team.html" data-page="team" class="nav-link">
+                            <span><b id="header_text">Team</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Stories.html" data-page="Stories" class="nav-link">
+                            <span><b id="header_text">Stories</b></span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link">
+                             <span ><b id="header_text">Blog</b></span>
+                        </a>
+                    </li> -->
+                    <!--  <li class="nav-item">
+                        <a href="./about" data-page="about" class="nav-link">
+                             <span ><b id="header_text">About</b></span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a target="blank" class="nav-link" href="https://forms.gle/TyQxMDPjzJoeNdPbA">
+                            <span class="btn" id="joinbtn"><b id="header_text">Sign Up</b></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main main-raised" style="margin-top: 0;">
+
+        <div class="container">
+
+
+            <p>&nbsp;</p>
+
+
+
+            <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                <!--First column-->
+                <div class="col-lg-6">
+                    <!--Card-->
+                    <h2 class="title" id="tracks"><b>Our Story </b></h2>
+                    <p>&nbsp;</p>
+                    <span id="mobile">
+                    </span><span class="about_title_track" style="color:rgb(54, 53, 53);">
+                        <h2 class="tag_title">
+                            Founders</h2>
+                    </span>
+                    <!--Card-->
+                    <p>&nbsp;</p>
+                </div>
+                <div class="container1">
+                    <div class="profiles" >
+                        <div class="profile">
+                            <img src="assets\img\team\ayush.png" class="profile-img"">
+                            <h3 class="user-name">Ayush Sharma</h3>
+                            <h5> Lead @ DSC RJIT(2019)<br> Code-in Mentor @ TensorFlow</h5>
+                            <div>
+                                <a href="https://www.facebook.com/ayush.sharma.1217727" target="_blank"> <i
+                                        class="fa fa-facebook-official"> </i> </a>
+                                <a href="http://twitter.com/ayushs136" target="_blank"> <i class="fa fa-twitter"> </i>
+                                </a>
+                                <a href=" http://imkronos.me" target="_blank"> <i class="fa fa-link"></i></a>
+                                <a href="http://linkedin.com/in/ayushs136" target="_blank"> <i class="fa fa-linkedin">
+                                    </i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profiles">
+                        <div class="profile">
+                            <img src="assets\img\team\ravi.png" class="profile-img">
+                            <h3 class="user-name">Ravi Gupta</h3>
+                            <h5> Head of Programming<br> Explore ML Facilitator</h5>
+                            <div>
+                                <a href="#" target="_blank"> <i
+                                        class="fa fa-facebook-official"> </i> </a>
+                                <a href="#" target="_blank"> <i class="fa fa-twitter"> </i>
+                                </a>
+                                <a href=" #" target="_blank"> <i class="fa fa-link"></i></a>
+                                <a href="#" target="_blank"> <i class="fa fa-linkedin">
+                                    </i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profiles" >
+                        <div class="profile">
+                            <img src="assets\img\team\haphus.png" class="profile-img">
+                            <h3 class="user-name">Parag Gaikwad</h3>
+                            <h5>Head of Designing Team</h5>
+                            <div>
+                                <a href="#" target="_blank"> <i
+                                        class="fa fa-facebook-official"> </i> </a>
+                                <a href="#" target="_blank"> <i class="fa fa-twitter"> </i>
+                                </a>
+                                <a href=" #" target="_blank"> <i class="fa fa-link"></i></a>
+                                <a href="#" target="_blank"> <i class="fa fa-linkedin">
+                                    </i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profiles">
+                        <div class="profile">
+                            <img src="assets\img\team\krkkhan.png" class="profile-img">
+                            <h3 class="user-name">Krishna Raj</h3>
+                            <h5>Head of Oraganizing Team</h5>
+                            <div>
+                                <a href="#" target="_blank"> <i
+                                        class="fa fa-facebook-official"> </i> </a>
+                                <a href="#" target="_blank"> <i class="fa fa-twitter"> </i>
+                                </a>
+                                <a href="#" target="_blank"> <i class="fa fa-link"></i></a>
+                                <a href="#" target="_blank"> <i class="fa fa-linkedin">
+                                    </i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!--/.First row-->
+                <p>&nbsp;</p>
+                <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                    <!--First column-->
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                        <!--Card-->
+                        <h3 class="title" id="tracks"><b>Memories</b></h3>
+                        <p>&nbsp;</p>
+                        <p>
+                        <h5 class="description">Developer Student Club RJIT is inspired by the Google Developers'
+                            Family.</h5>
+                        </p>
+                        <p>
+                        <h5 class="description">The motive is to create a local ecosystem of Developers in and around
+                            the Campus. And having fun doing it.</h5>
+                        </p>
+
+                        <p>&nbsp;</p>
+
+                        <a class="btn btn-primary btn-fab btn-round" id="social_button1"
+                            href="https://www.facebook.com/dscrjit/" target="_blank"><i
+                                class="fa fa-facebook"></i></a><a>&nbsp;</a>
+                        <a class="btn btn-primary btn-fab btn-round" id="social_button1"
+                            href="https://twitter.com/DscRjit" target="_blank"><i
+                                class="fa fa-twitter"></i></a><a>&nbsp;</a>
+                        <a class="btn btn-primary btn-fab btn-round" id="social_button1"
+                            href="https://instagram.com/dscrjit" target="_blank"><i
+                                class="fa fa-instagram"></i></a><a>&nbsp;</a>
+                        <a class="btn btn-primary btn-fab btn-round" id="social_button1"
+                            href="https://github.com/DSC-RJIT" target="_blank"><i
+                                class="fa fa-github"></i></a><a>&nbsp;</a>
+
+
+                        <!--/.Card-->
+                    </div>
+                    <!--/.First column-->
+                    <!--Second column-->
+                    <div class="col-lg-6">
+                        <!--Card-->
+                        <p>&nbsp;</p>
+                        <div class="row">
+                            <div class="col-lg-5" id="p1">
+                                <p>
+                                <h4 class="description"
+                                    style="font-weight:600; color:rgb(228, 180, 25); padding:8px 4px; background-color:rgba(247, 212, 17, 0.15); border-radius:8px; width:100px; padding-left:11px;">
+                                    Seminars</h4>
+                                </p>
+                                <p>
+                                <h5 class="description">Get updated with the latest news and announcements.</h5>
+                                </p>
+                            </div>
+                            <div class="col-lg-5 " id="p4">
+                                <p>
+                                <h4 class="description"
+                                    style="font-weight:600; color:rgb(12, 80, 182); padding:8px 4px; background-color:rgba(12, 80, 182,0.15); border-radius:8px; width:115px; padding-left:11px;">
+                                    Study Jams</h4>
+                                </p>
+                                <p>
+                                <h5 class="description">Hands-on experience with the community members.</h5>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5" id="p1">
+                                <p>
+                                <h4 class="description"
+                                    style="font-weight:600; color:rgb(223, 77, 19); padding:8px 4px; background-color:rgba(223, 77, 19,0.15); border-radius:8px; width:90px; padding-left:11px;">
+                                    Projects</h4>
+                                </p>
+                                <p>
+                                <h5 class="description">Projects with a social impact that help a lot of people.</h5>
+                                </p>
+                            </div>
+                            <div class="col-lg-5 " id="p4">
+                                <p>
+                                <h4 class="description"
+                                    style="font-weight:600; color:rgb(11, 184, 83); padding:8px 4px; background-color:rgba(11, 184, 83,0.15); border-radius:8px; width:120px; padding-left:11px;">
+                                    Hackathons</h4>
+                                </p>
+                                <p>
+                                <h5 class="description">Dream. Explore. Wonder. Build it Together.</h5>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Second column-->
+                    </div>
+                    <!--/.First row-->
+                    <p>&nbsp;</p>
+
+                </div>
+                <!--/.First row-->
+                <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+
+                    <!--Second column-->
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                        <!--Card-->
+
+                        <img class="img-fluid" src="assets/img/kit/team.JPG" width="100%" />
+                    </div>
+                    <!--/.Second column-->
+
+                    <!--First column-->
+                    <div class="col-lg-6">
+                        <!--Card-->
+                        <p>&nbsp;</p>
+                        <span id="mobile" class="icon"><i class="material-icons">
+                                whatshot
+                            </i></span><span class="about_title_track" style="color:rgb(54, 53, 53);">The Team</span>
+                        <!--Card-->
+                        <p>&nbsp;</p>
+                        <p>
+                        <h5 class="description">These are the amazing bunch of people who make the community what it is.
+                            Who are the Backbone of Developer Student Club, RJIT and ensure that we can forge ahead <a
+                                target="blank" href="https://www.marvel.com/movies/avengers-endgame"><b
+                                    id="blue_text">#WhateverItTakes!</b></a></h5>
+                        </p>
+                        <p>
+                        <h5 class="description">They take the time out from their daily grind to give back to the
+                            members and empower them to become bigger (Metaphorically). And Better.</h5>
+                        </p>
+
+
+
+
+                        <p><a href="./team.html" target="blank"><span class="description" id="details_redirect"><b>Meet
+                                        The Team</b></span></a>&nbsp;&nbsp;
+                        </p>
+                        <p>
+                        </p>
+
+                        <!--/.Card-->
+
+                    </div>
+                    <!--/.First column-->
+
+                </div>
+
+
+                <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                   
+                    <p>&nbsp;</p>
+                    <h2 class="title" id="tracks" style="text-align: center;">
+                        <b>Memories</b>
+                    </h2>
+                    <div class="row mt-5 wow fadeIn" style="text-align:center;">
+                        <div class="col-lg-12" style="text-align:center;">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                               <div class="carousel-inner"> 
+                                   <div class="carousel-item active">
+                                        <div class="carousel-wrapper">
+                                            <h1 id="orange_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1>
+                                            <img src="assets/img/logos/exploreML.png" height="40px" />
+                                            <h4 class="description">We hosted a lot of events and create best memories. 
+                                                This is when Ayush Sharma(Lead @2019) introduce the first Developer Students Club
+                                                in Gwalior in RJIT. He invited the NIKHIL RAICHUR Community manager of DSC India, Google 
+                                                He introduce What DSC is , And How it works, motivate student to learn new technologies.
+                                                On  23rd September 2019
+                                            </h4>
+                                            <h1 id="orange_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1>
+                                            
+                                            <p>
+                                                <a target="blank"
+                                                    href="https://commudle.com/dsc-rjit/events/orientation-program">
+                                                    <!-- <button class="btn btn-primary" id="buttons"><b>Register Here</b></button></a> -->
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="carousel-wrapper">
+                                            <h1 id="blue_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1>
+                                            <img src="https://miro.medium.com/max/4282/1*PshD8n5B_7h-cmmFYpurqA.png"
+                                                height="40px" />
+                                            <h4 class="description">When DSC came in our Campus.The Community provides a lot of
+                                                opportunities to learn , grow with google technologies, and win some exciting swags.
+                                                The GCP Crash course is one of the event which were held for over a month from 1st 
+                                                oct-31 oct. This is the another one introduction event for students to teach about What is 
+                                                GCP and what is tracks, How is it works.
+                                            </h4>
+                                            <h1 id="blue_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1>
+
+                                            <b>
+                                                <h4 class="description">Click to Know More <span
+                                                        id="blue_text">#GCPCrashCourse</span>
+                                            </b></h4>
+                                            </<b>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="carousel-item">
+                                            <div class="carousel-wrapper">
+                                            <h1 id="blue_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1>
+                                            <img src="https://www.pixitmedia.com/wp-content/uploads/2019/09/google_lockup_cloud_rgb.png" height="40px"/>
+                                            <h4 class="description">#GCPCrashCourse is a Cloud based learning campaign that focuses on building Learning Paths for students across 3 distinct Tracks. With <span id="blue_text">#GCPCrashCourse</span> you get to learn dedicated topics across three complete tracks, namely -  Application Development, Data & Machine Learning.</h4>
+                                            <h1 id="blue_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1> 
+                                            
+                                            <a href="#"><b><h4 class="description">Click to Sign Up for <span id="blue_text">#GCPCrashCourse</span></b></h4></a>
+                        
+                                            </div> -->
+                                
+                                <div class="carousel-item">
+                                    <div class="carousel-wrapper">
+                                        <h1 id="red_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1>
+                                        <img src="https://p.kindpng.com/picc/s/128-1280357_github-logo-png-transparent-png.png"
+                                            height="40px" />
+                                        <h4 class="description">Today's era is the era of Open source, Version controls. This is the 
+                                            another session Intoduction to Git and Github. Which is held by our ex dsc team . In which
+                                            our students learn what is git and github. How it uses. And How much is it important.
+                                        </h4>
+                                        <h1 id="red_text" style="font-family: 'Be Vietnam', sans-serif;">"</h1>
+                                        
+                                    </div>
+                                </div>
+                               </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span>&nbsp;</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span>&nbsp;</span>
+                            </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+            <!-- <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
+               
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                        
+                        
+                        <img class="img-fluid" src="assets/img/kit/Rustamji.jpg" width="100%"/>
+                        <p>&nbsp;</p>
+                    </div>
+                   
+
+                       
+                        <div class="col-lg-7">
+                           
+                            
+                            <h3 class="title" style="color:rgb(54, 53, 53);">About RJIT</h3>
+                          
+                            <p>&nbsp;</p>
+                            <p><h5 class="description">Rustamji Institute of Technology, popularly known as RJITK or RJIT, is a private autonomous engineering college in Anandapur, Kolkata, West Bengal, India. The foundation behind the growth of RJITK is the Kalyan Bharti Trust. To meet the demand for technical manpower, the Kalyan Bharti Trust supplemented the state government’s efforts by establishing the Rustamji Institute of Technology in September 2000.
+                            </h5></p>
+                            
+                            <p><a href="https://Rustamjiit.edu" target="blank"><span class="description" id="details_redirect"><b>Learn More</b></span></a>&nbsp;&nbsp;
+                            </p>
+   
+                        </div>
+                      
+                       
+            </div>
+             -->
+            <!--/.First row-->
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+
+    </div>
+    <div id="footer">
+        <a href="#top" id="top-button" class="top">
+            <i class="material-icons" style=" font-size: 30px;">
+                keyboard_arrow_up
+            </i><span>&nbsp;</span>
+        </a>
+        <div class="container" style="padding-top: 20px;">
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="share-social">
+                        <span><a><b>Keep In Touch</b></a></span>
+                        <a id="social_button" href="https://www.facebook.com/dscrjit/" target="_blank"><i
+                                class="fa fa-facebook"></i></a><a>&nbsp;</a>
+                        <a id="social_button" href="https://twitter.com/DscRjit" target="_blank"><i
+                                class="fa fa-twitter"></i></a><a>&nbsp;</a>
+                        <a id="social_button" href="https://instagram.com/dscrjit" target="_blank"><i
+                                class="fa fa-instagram"></i></a><a>&nbsp;</a>
+                        <a id="social_button" href="https://github.com/dsc-rjit" target="_blank"><i
+                                class="fa fa-github"></i></a><a>&nbsp;</a>
+
+                        <a>&nbsp;</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="share-social">
+                        <span><a href="mailto:dscrjit@gmail.com"><b>Email Us : <b
+                                        id="blue_text">dscrjit@gmail.com</b></b></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer-details">
+                    <span><b>ABOUT</b></span>
+                    <p>
+                        <a href="https://developers.google.com/programs/community/dsc/" id="details_redirect"
+                            target="_blank">Developer Student Clubs</a><br />
+                        <!-- <a href="https://facebook.com/pg/GDGKolkata/about/" id="details_redirect" target="_blank"><b>GDG Kolkata</b></a><br /> -->
+                        <a href="https://developers.google.com/programs/community/gdg/" id="details_redirect"
+                            target="_blank">Google
+                            Developers Group</a><br />
+
+                        <a href="/team" id="details_redirect">Meet the Team</a><br />
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer-details">
+                    <span><b>ABOUT WTM</b></span>
+                    <p>
+                        <!-- <a href="https://facebook.com/WTMKolkata/" id="details_redirect" target="_blank"><b>WTM Kolkata</b></a><br /> -->
+                        <a href="https://www.womentechmakers.com/" id="details_redirect" target="_blank"
+                            style="color:rgb(66, 66, 66);">Women Techmakers</a><br />
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer-details">
+                    <span><b>OTHER LINKS</b></span>
+                    <p>
+                        <a href="#" id="details_redirect" target="_blank" style="color:rgb(65, 64, 64);">Call for
+                            Speakers</a><br />
+                        <a href="#" id="details_redirect" target="_blank" style="color:rgb(65, 64, 64);">Call for
+                            Sponsors</a><br />
+                        <a href="https://docs.google.com/document/d/1WegbJvqLo5hta8_fmIvi8UfqaKW7_vxSY8gDvxDHS9o/edit?usp=sharing"
+                            id="details_redirect" target="_blank"><b>Community Guidelines</b></a><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="container" style="padding-bottom: 20px;">
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="assets/img/logos/dsc_linear.png" alt="dsc-logo" />
+                </div>
+                <div class="col-lg-9 copyright" style="font-family: 'Open Sans', sans-serif; font-size:14px;">
+                    &copy; Copyright 2019 <b>DSC RJIT</b> <span class="hide-bar"> | </span><a id="details_redirect"
+                        href="#"><b>Template by DSC HIT</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    <script>
+
+        if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+                console.log("[PWA Builder] active service worker found, no need to register");
+            } else {
+                // Register the service worker
+                navigator.serviceWorker
+                    .register("pwabuilder-sw.js", {
+                        scope: "./"
+                    })
+                    .then(function (reg) {
+                        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+                    });
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/bootstrap-material-design.js"></script>
+    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+    <script src="assets/js/material-kit.js?v=2.0.2"></script>
+    <script src="assets/assets-custom/js/material-kit-demo.js"></script>
+    <!-- <script src="assets/assets-custom/js/GridHorizontal.js"></script> -->
+    <!-- <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+    <script src="assets/assets-custom/main.js"></script>
+
+    <script src="assets/assets-custom/index.js"></script>
+</body>
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDhRsi9I2gjsX8vlxwQzn01fsPSrDdCPdc",
+        authDomain: "dsc-rjit.firebaseapp.com",
+        databaseURL: "https://dsc-rjit.firebaseio.com",
+        projectId: "dsc-rjit",
+        storageBucket: "dsc-rjit.appspot.com",
+        messagingSenderId: "562738869001",
+        appId: "1:562738869001:web:bdb80abb945b831a2019d8",
+        measurementId: "G-FH6WXZZYC6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const functions = firebase.functions();
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.3/lib/darkmode-js.min.js"></script>
+<script src="/assets/scripts/dark.js"></script> -->
+
+<script src="/assets/scripts/auth.js"></script>
+<script src="/assets/scripts/index.js"></script>
+</script>
+
+<script>
+    $('document').ready(function () {
+        function getLinks(links) {
+            var result = '';
+            links.forEach(function (link) {
+                if (link.linkType === 'Twitter') {
+                    result += '<li style="color:rgb(0,101,202);"><a id="social_link1" href="' +
+                        link.link +
+                        '" target="_blank"><i class="fa fa-twitter" aria-hidden="true"  style="margin-left:20"></i></a></li>';
+                }
+                if (link.linkType == 'LinkedIn') {
+                    result += '<li style="color:rgb(0,101,202);"><a id="social_link1" href="' +
+                        link.link +
+                        '" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" style="margin-left:20px" ></i></a></li>';
+                }
+                if (link.linkType == 'Blog') {
+                    result += '<li style="color:rgb(0,101,202);"><a id="social_link1" href="' +
+                        link.link +
+                        '" target="_blank"><i class="fa fa-link" aria-hidden="true" ></i></a></li>';
+                }
+                if (link.linkType == 'Facebook') {
+                    result += '<li style="color:rgb(0,101,202);"><a id="social_link1" href="' +
+                        link.link +
+                        '" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="margin-left:20px;"></i></a></li>';
+                }
+            });
+            return result;
+        }
+
+        function getTemplate(member) {
+            var template =
+                '<div  style="margin:50px;">\
+ <div class="profile">\
+     <img src="' +
+                member.displayPicture +
+                '" class="profile-img">\
+                \
+         <span class="team-member-name" style="font-weight:500;" id="blue_text"><b>' +
+                member.name + '</b></span><br />\
+         <span style="font-weight:300;">' + member.description +
+                '</span>\
+         <span>\
+             <ul class="row mt-5 wow fadeIn">' +
+                getLinks(member.links) +
+                '\
+             </ul>\
+         </span>\
+     </div>\
+ </div>\
+</div>';
+            return template;
+        }
+
+        var html = '';
+        $.getJSON('./assets/json/team.json', function (members) {
+            members.forEach(function (member) {
+                html += getTemplate(member);
+            });
+            $('#container-team').append(html);
+        });
+
+    });
+</script>
+
+
+
+
+</html>

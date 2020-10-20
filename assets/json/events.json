@@ -1,0 +1,48 @@
+[{
+    "eventName": "Getting Started with Flutter",
+    "info":"Flutter is a new mobile app SDK to help developers and designers build modern mobile apps for iOS and Android. In this 3Hrs codelab session, you will write your very first mobile app with Flutter, get a brief overview of Dart language and tools and Flutter concepts. ",     
+    "date":"8th March 2020",
+    "imgSrc":"./assets/img/Events/fluttergwl.png",
+    "fbLink":"https://commudle.com/dsc-rjit/events/getting-started-with-flutter"
+},
+    {
+        "eventName": "Google Hashcode",
+        "info":"Hash Code is a team programming competition, organized by Google, for students and professionals around the world. You pick your team and programming language and we pick an engineering problem for you to solve. ",     
+        "date":"20th February 2020",
+        "imgSrc":"./assets/img/Events/hashcode1.png",
+        "fbLink":"https://g.co/hashcode"
+    },
+    {
+        "eventName": "Introduction to Open Source Contribution Using Git and Github",
+        "info":"Effective use of version control is an important and useful skill for any developer working on long-lived (or even medium-lived) projects, especially if more than one developer is involved.",     
+        "date":"26th Januray 2020",
+        "imgSrc":"./assets/img/Events/opens.png",
+        "fbLink":"https://commudle.com/dsc-rjit/events/orientation-and-inaugration"
+    },
+    
+    {
+        "eventName": "Google AI | Explore ML Workshop",
+        "info":"Explore Machine Learning (ML) is a Google-sponsored program  for university students to get started with Machine Learning. The curriculum offers 2 tracks of machine learning content (Beginner, Intermediate) and relies on university student facilitators to train other students on campus.",
+        "date":"20th December 2019",
+        "imgSrc":"./assets/img/Events/Explore ML.png",
+        "fbLink":"https://commudle.com/dsc-rjit/events/orientation-program"
+    },
+  
+    {
+        
+        "eventName": "GCP Crash Course",
+        "info":"Developer Student Club RJIT in collaboration with Google Developers and Qwiklabs brings to you the #GCPCrashCourse, the best place to get started with the Google Cloud Platform.",
+        "date":"11th October, 2019",
+        "imgSrc":"./assets/img/Events/GCP Crash Course.png",
+        "fbLink":"https://twitter.com/DscRjit/status/1183073927691530240?s=20"
+    },
+    {
+        "eventName": "DSC RJIT Orientation",
+        "info":"A community is nothing without its people, and therefore, we welcomed in the Freshmen at a small orientation Session about DSC wherein we told them about the Club, our vision and the end mission.",
+        "date":"23rd September 2019",
+        "imgSrc":"./assets/img/Events/dsc_orientation.png",
+        "fbLink":"https://twitter.com/DscRjit/status/1176595792334712832?s=20"
+    }
+   
+    
+]   

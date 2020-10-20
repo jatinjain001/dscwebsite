@@ -1,0 +1,96 @@
+[
+    {
+        "displayPicture":"./assets/img/team/ayush.png",
+        "name":"Ayush Sharma",
+        "description":"Lead @ DSC RJIT, Google Code-in Mentor @ TensorFlow",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "http://imkronos.me"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "http://twitter.com/ayushs136"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://www.facebook.com/ayush.sharma.1217727"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "http://linkedin.com/in/ayushs136"
+            }
+        ]
+    },
+    {
+       
+        "displayPicture":"./assets/img/team/ravi.png",
+        "name":"Ravi Gupta",
+        "description":"Head of Programming, Explore ML Facilitator",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "#"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "#"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://www.facebook.com/"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "displayPicture":"./assets/img/team/haphus.png",
+        "name":"Parag Gaikwad",
+        "description":"Head of Designing Team",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "#"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "#"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://www.facebook.com/"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "displayPicture":"./assets/img/team/krkkhan.png",
+        "name":"Krishna Raj",
+        "description":"Head of Management Team",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "#"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "#"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://www.facebook.com/"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "#"
+            }
+        ]
+    }   
+   
+]
